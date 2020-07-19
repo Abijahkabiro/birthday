@@ -18,10 +18,14 @@
                      as a 'day name' which corresponds to the day in the week they were birn depending on their gender.</p>
             </div>
         </div>
-        <form class="form" onsubmit="return getAkanName"
+        <form class="form" onsubmit="return getAkanName">
+          <label for="centuryOfBirth">
+            Century:
+            <input id="century" type="number" name="centuryOfBirth" placeholder="CC">
+          </label>
           <label for="yearOfBirth">
               Year:
-              <input id="year" type="number" name="yearOfBirth" placeholder="YYYY">
+              <input id="year" type="number" name="yearOfBirth" placeholder="YY">
           </label>
           <label for="monthOfBirth">
               Month:
@@ -32,6 +36,15 @@
               <input id="day" type="number" name="dayOfBirth" placeholder="DD"
           </label>
     </div>
+    <br>
+    <label for="gender">
+        <p>What gender are you?</p>
+        Male:
+        <input id="male" type="radio" name="gender" value="male">
+        Female:
+        <input id="female" type="radio" name="gender" value="female">
+    </label>
+    </form>
     
 </body>
 </html>
