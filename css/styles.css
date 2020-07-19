@@ -1,0 +1,14 @@
+
+    body {
+        background-image:url(ghana1.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding-top: 80px;
+    }
+  
+  h1 {
+    text-transform: capitalize;
+    font-weight: bold;
+   }
+  
+
