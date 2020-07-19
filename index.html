@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,6 @@
     <title>Akan Names</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="js/scripts.js"></script>
 </head>
 
 <body> 
@@ -29,11 +28,11 @@
           </label>
           <label for="monthOfBirth">
               Month:
-              <input id="month" type="number" name="monthOfBirth" placeholder="MM">
+              <input id="month" type="number" name="monthOfBirth" placeholder="MM" required min="1" max="12">
           </label>
           <label for="dayOfBirth">
               Day:
-              <input id="day" type="number" name="dayOfBirth" placeholder="DD"
+              <input id="day" type="number" name="dayOfBirth" placeholder="DD" required min="1" max ="31">
           </label>
     </div>
     <br>
@@ -47,6 +46,7 @@
     <br>
     <button type="submit" class="bg-success">submit</button>
     </form>  
-
+    <script src="js/scripts.js"></script>
+    <h1 id="result"></h1>
 </body>
 </html>
