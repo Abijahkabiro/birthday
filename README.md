@@ -15,6 +15,6 @@ HTML
 CSS
 Javascript
 
-### LICENCE:[MIT]()
+### LICENCE:[MIT](https://github.com/Abijahkabiro/birthday/blob/master/LICENCE)
 
 
