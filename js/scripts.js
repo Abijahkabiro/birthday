@@ -7,6 +7,10 @@ function name(){
     var day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+
+if (CC.value =="" ||YY.value ==""||MM.value ==""||DD.value ==""){
+    alert("No blank values");
+    var gender = document.querySelector('input[name="gender"]:checked').value;
 }
     var dayOfWeek = parseInt(((CC/4)-2*CC-1) +((5*YY/4)) + ((26*(MM+1)/10)) +DD)%7;
 
@@ -58,17 +62,16 @@ function name(){
            alert("You Akan name is: "+femaleNames[6]);
         }
     }
-    if(day <=0 || day >31){
-        console.log("You entered an invalid day") 
-    }else{
-        console.log("You entered a valid day")
-    }
-    if (month <=0 || month >12){
-        console.log("You entered an invalid month")
-    }else{
-        console.log("You entered an valid month")
-    }
+    
 }
+
+
+var output=document.getElementById("result");
+output.innerHTML = "The were born on:" + "  " + "Your akan name is " +maleNames;
+var output=document.getElementById("result");
+output.innerHTML = "The were born on:" + "  " + "Your akan name is " +femaleNames;
+
+
 
 
 
