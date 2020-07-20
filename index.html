@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Names</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css"   rel="stylesheet"   type="text/css">
+
 </head>
 
-<body> 
+<body>
     <div class="container">
         <h1>Akan Names</h1>
         <div class="row">
@@ -16,38 +17,65 @@
                 <p>Akan names are derived from Ghanian culture.Frequently in Ghana ,children are given their first names
                      as a 'day name' which corresponds to the day in the week they were birn depending on their gender.</p>
             </div>
+            <div class="col-md-5">
+                <h2>Female Names</h2>
+                <ul>
+                    <li>Sunday: Akosua</li>
+                    <li> Monday: Adwoa</li>
+                    <li>Tuesday: Abenaa</li>
+                    <li>Wednesday: Akua</li>
+                    <li>Thursday: Yaa</li>
+                    <li>Friday: Afua</li>
+                    <li>Saturday: Ama</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <h2>Male Names</h2>
+                <ul>
+                    <li>Sunday: Kwasi</li>
+                    <li>Monday: Kwadwo</li>
+                    <li> Tuesday: Kwabena</li>
+                    <li> Wednesday: Kwaku</li>
+                    <li>Thursday: Yaw</li>
+                    <li>Friday: Kofi</li>
+                    <li>Saturday: Kwame</li>
+                </ul>
+            </div>
         </div>
-        <form class="form" onsubmit="return getAkanName">
-          <label for="centuryOfBirth">
-            Century:
-            <input id="century" type="number" name="centuryOfBirth" placeholder="CC">
-          </label>
-          <label for="yearOfBirth">
-              Year:
-              <input id="year" type="number" name="yearOfBirth" placeholder="YY">
-          </label>
-          <label for="monthOfBirth">
-              Month:
-              <input id="month" type="number" name="monthOfBirth" placeholder="MM" required min="1" max="12">
-          </label>
-          <label for="dayOfBirth">
-              Day:
-              <input id="day" type="number" name="dayOfBirth" placeholder="DD" required min="1" max ="31">
-          </label>
     </div>
-    <br>
-    <label for="gender">
-        <p>What gender are you?</p>
-        Male:
-        <input id="male" type="radio" name="gender" value="male">
-        Female:
-        <input id="female" type="radio" name="gender" value="female">
-    </label>
-    <br>
-    <button type="submit" class="bg-success">submit</button>
-    <button type="reset" class="bg-danger">Reset</button>
-</form>  
+    <form>
+       <div class ="one">
+        <div class="form">
+        <div>
+            <label for="centuryOfBirth">Century</label>
+            <input type="number"  id="century" placeholder="Century"><br>
+        </div>
+        <div>
+            <label for="yearOfBirth">Year</label>
+            <input type="number" id="year"  placeholder="Year"><br>
+        </div>
+        <div>
+            <label for="monthOfBirth">Month</label>
+            <input type="number" id="month" placeholder="Month" required min="1" max="12"><br>
+        </div>
+        <div>
+            <label for="dateOfBirth">Day</label>
+            <input type="number"id="day" placeholder="Day" required min="1" max="31"><br>
+        </div>
+        <div>
+            <label for ="gender">Gender</label><br>
+            Male:
+            <input type="radio" name="gender"  id="male" value="male"placeholder="Male">
+            Female:
+            <input type="radio" name="gender"  id="female" value="female" placeholder="Female">
+        </div>
+    
+        <button type="submit" class="bg-success" onsubmit="get the day born and the Akan name">Submit</button>
+        <button type="reset" class="bg-danger" onreset="goes back to default">Reset</button>
+    </div>
+    </form>
+  </div>
+    </div>
     <script src="js/scripts.js"></script>
-    <h1 id="result"></h1>
 </body>
 </html>
