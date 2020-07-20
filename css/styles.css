@@ -1,14 +1,25 @@
 
     body {
-        background-image:url(ghana1.jpg);
+        background-image:url(Ghana1.JPG);
         background-repeat: no-repeat;
         background-size:cover;
         padding-top: 80px;
     }
   
-  h1 {
-    text-transform: capitalize;
-    font-weight: bold;
-   }
   
-
+    h1{
+      font-size: 50px;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+  }
+  .col-md-5p{
+      font-family: 'Enriqueta', serif;
+      
+  }
+  h2{
+      font-family: 'Anton', sans-serif; 
+      color: coral; 
+  }
+ .one{
+   text-align: center;
+ }
