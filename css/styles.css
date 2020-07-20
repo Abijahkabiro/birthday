@@ -1,7 +1,7 @@
 
     body {
-        background:url(Ghana1.JPG);
-        background-repeat: no-repeat;
+        background-image:url(.../Ghana1.JPG);
+        background-repeat: repeat;
         background-size:cover;
         padding-top: 80px;
     }
@@ -19,6 +19,7 @@
   h2{
       font-family: 'Anton', sans-serif; 
       color: coral; 
+      align:center;
   }
  .one{
    text-align: center;
